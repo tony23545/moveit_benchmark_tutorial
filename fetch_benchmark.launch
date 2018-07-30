@@ -18,6 +18,5 @@
   <!-- Launch benchmark node -->
   <node name="moveit_run_benchmark" pkg="moveit_ros_benchmarks" type="moveit_run_benchmark" output="screen" required="true" args = "$(arg bench_opts) --benchmark-planners">
     <!--rosparam command="load" file="$(arg bench_opts)"/-->
-    <rosparam name="-arg1" value="help" />
   </node>
 </launch>
