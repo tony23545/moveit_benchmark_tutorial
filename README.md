@@ -27,4 +27,13 @@ This step will generate a log file in the output path set in the cfg file.
 ```
 python moveit_benchmark_statistics.py /home/shengjian/benchmark.log.1.log -p benchmark.pdf
 ```
-This step will generate a PDF of the benchmark result in the working dir.
+This step will generate a PDF of the benchmark result in the working dir.  
+  
+### Using constraing  
+I following the advise [here](https://groups.google.com/forum/#!topic/moveit-users/G-YTRJmHcXc)  
+The constraints have to be set programmatically into the database.  
+Here is a way to set the default constraint, for fetch, it is wirst_rolling_link upright.  
+```
+roslaunch fetch_moveit_config default_warehouse_db.launch reset:=true
+```
+Then we can benchmark the planner with constraint
