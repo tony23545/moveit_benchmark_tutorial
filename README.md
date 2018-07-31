@@ -23,7 +23,8 @@ roslaunch moveit_ros_benchmarks fetch_benchmark.launch
 ```  
 This step will generate a log file in the output path set in the cfg file.  
 
-#### generate a PDF of the plot
+#### generate a PDF of the plot  
+cd to the folder containing moveit_benchmark_statistics.py  
 ```
 python moveit_benchmark_statistics.py /home/shengjian/benchmark.log.1.log -p benchmark.pdf
 ```
